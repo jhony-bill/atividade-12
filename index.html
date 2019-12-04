@@ -5,31 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>oi javascript</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+   <link rel="stylesheet" href="css/index.css">
 
 
 </head>
 
 <body>
+<h1>atividade-12</h1>
 <table>
 
-
-
  <button type="button" class="btn btn-primary">mostra texto</button>
-
-
-</table>
-   
-
-
+ <button type="button" class="btn btn-secondary">ocultar texto</button>
+ <button type="button" class="btn btn-success">trocar cor</button>
 
     <input id="imput-texto">
     <button id="btntrocatexto" onclick="mostrarTexto()">troca texto</button>
-    <h1 id="resultadoTexto">NENHUM TEXTO DIGITADO</h1>
+    <h2 id="resultadoTexto">NENHUM TEXTO DIGITADO</h2>
 
+    
 </body>
 
 <script>
@@ -39,7 +36,10 @@
         document.getElementById("resultadoTexto").textContent =
             document.getElementById('imput-texto').value;
     }
-
+Window.omload = function () {
+    var elementotexto = document.getElementById("texto");
+        elementotexto.textContent = elementotexto.textcontent + "jhony rodrigues da silva campos";
+}
 
 </script>
 
